@@ -25,7 +25,7 @@ function Login() {
       });
 
       localStorage.setItem('token', res.data.token);
-      navigate('/home'); // redirect after success
+      navigate('/products'); 
     } catch {
       setError('Invalid credentials');
     }

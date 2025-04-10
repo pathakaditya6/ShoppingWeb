@@ -15,12 +15,12 @@ function Header() {
   return (
     <header className="navbar">
       <div className="nav-left">
-        <Link to="/home" className="nav-logo">ShopKart</Link>
+        <Link to="/products" className="nav-logo">ShopKart</Link>
       </div>
       <div className="nav-right">
-        <Link to="/home">Home</Link>
+        <Link to="/products">Home</Link>
         <Link to="/cart">
-          Cart ({cartItems.reduce((total, item) => total + item.quantity, 0)})
+          Cart <span className='cart-qty'>{cartItems.reduce((total, item) => total + item.quantity, 0)}</span>
         </Link>
         <button onClick={handleLogout} className="logout-btn">Logout</button>
       </div>
