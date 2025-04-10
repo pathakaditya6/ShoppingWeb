@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+.login-container {
+  max-width: 300px;
+  margin: 80px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.password-field {
+  position: relative;
+  margin-bottom: 10px
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.user-name-field{
+  margin-bottom: 10px;
+}
+
+
+
+.login-form input:focus {
+  border-color: #0077cc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 119, 204, 0.3);
+}
+
+.btn-whole,
+login {
+  cursor: pointer;
+  width: 100px;
+  padding: 10px;
+  background: rgb(71, 139, 240);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size:17px
+}
+.btn-whole:hover{
+  background: rgb(101, 160, 249);
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.error {
+  color: rgb(6, 0, 0);
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Login */
+
+@media (min-width: 600px) {
+  .login-container {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 900px) {
+  .login-container {
+    max-width: 500px;
+    margin-top: 100px;
+  }
+}
